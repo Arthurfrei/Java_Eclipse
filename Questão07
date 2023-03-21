@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Questão07 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Informe o tipo de combustivel: ");
+		String combustivel = sc.nextLine();
+		
+		System.out.println("imforme a capacidade do tanque: ");
+		double capacidadeTanque = sc.nextDouble();
+		
+		if (combustivel.equalsIgnoreCase("G")) {
+			double valorPago = capacidadeTanque * 3.79;
+			System.out.println("O valor pago na Gasolina: " + valorPago);
+		}else {
+			double valorPago = capacidadeTanque * 2.90;
+			System.out.println("O valor pago no Alcool: " + valorPago);
+		}
+		
+		
+	}
+
+}
